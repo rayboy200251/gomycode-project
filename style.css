@@ -1,0 +1,647 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  header {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba(128, 0, 128, 0.151);
+    padding: 1rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    color: purple;
+  }
+  header form {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header form input {
+    border: 1px solid purple;
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 300px;
+    border-radius: 10px 0px 0px 10px;
+    outline: none;
+  }
+  header form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    border-radius: 0px 10px 10px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  header form button:hover {
+    background-color: rgba(128, 0, 128, 0.425);
+    color: white;
+  }
+  .icons {
+    margin-left: 30px;
+    font-size: 1.5rem;
+    color: green;
+  }
+  
+  .icons a {
+    margin-right: 30px;
+    transition: all 0.3s ease-in-out;
+  }
+  .icn {
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .icn:hover {
+    transform: scale(1.4);
+    color: purple;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid purple;
+  }
+  
+  .navbar ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  nav ul li {
+    list-style: none;
+    margin-right: 20px;
+  }
+  nav li a {
+    text-decoration: none;
+    color: rgb(48, 5, 105);
+    font-size: 1.1rem;
+    transition: all 300ms ease;
+  }
+  nav li a:hover {
+    color: rgb(48, 5, 105);
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    color: purple;
+  }
+  .logoname {
+    font-size: 1.5rem;
+    color: rgb(48, 5, 105);
+  }
+  .logo a {
+    color: purple;
+    font-size: 2em;
+  }
+  .shop-cart {
+    font-size: 3rem;
+    margin-top: 10px;
+    color: purple;
+  }
+  
+  /* container 1 */
+  /* .container {
+    background-image: url(./assets/thanksgiving-day-or-autumn-composition-with-pumpkin-oranges-leaves-or-chicken-thanksgiving-food-concept-by-ai-generated-free-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 80vh;}
+     */
+  
+  .container {
+    background-image: url(./assets/thanksgiving-day-or-autumn-composition-with-pumpkin-oranges-leaves-or-chicken-thanksgiving-food-concept-by-ai-generated-free-photo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 84vh;
+  }
+  .container .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    text-align: center;
+    margin: 0 70px;
+  }
+  .container .title h1 {
+    font-size: 4rem;
+    color: purple;
+    margin-bottom: 20px;
+    margin-top: 10%;
+  }
+  .container .title p {
+    font-size: 1.5rem;
+    color: purple;
+    margin-bottom: 20px;
+  }
+  .container .title button {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    border-radius: 10px 0px 10px 0px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .container .title button:hover {
+    background-color: rgba(128, 0, 128, 0.616);
+    color: white;
+  }
+  .container .title button a {
+    text-decoration: none;
+    color: white;
+  }
+  .container .title button a:hover {
+    color: white;
+  }
+  
+  /* products */
+  .cont h1 {
+    text-align: center;
+    color: purple;
+    margin: 20px 0px;
+  }
+  .products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    margin: 20px;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  .product img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  .product h2 {
+    font-size: 1.5rem;
+    color: purple;
+    margin: 10px 0;
+  }
+  .product p {
+    font-size: 1rem;
+    color: purple;
+    margin: 10px 0;
+  }
+  .product button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .product button:hover {
+    background-color: rgba(128, 0, 128, 0.425);
+    color: white;
+  }
+  .product button a {
+    text-decoration: none;
+    color: white;
+  }
+  .product button a:hover {
+    color: white;
+  }
+  .product span {
+    font-size: 1.5rem;
+    color: purple;
+    margin: 10px 0;
+  }
+  
+  .cont .cart {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .cont .item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .cont .item-name {
+    flex-grow: 1;
+  }
+  
+  .cont .quantity {
+    display: flex;
+    align-items: center;
+  }
+  .cont .quantity button {
+    margin: 0px 20px;
+    padding: 5px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  .cont .quantity button:hover {
+    background-color: #0056b3;
+  }
+  
+  .container2 button {
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .container2 button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cont .decrease,
+  .increase {
+    width: 30px;
+    text-align: center;
+  }
+  
+  .cont .total {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
+  .cont .clear-cart,
+  .buy-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .cont .clear-cart:hover,
+  .buy-btn:hover {
+    background-color: #218838;
+  }
+  
+  /* cart */
+  
+  .container2 {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .container2 h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .cart {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+  
+  .item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  
+  .item-name {
+    flex-grow: 1;
+  }
+  
+  .quantity {
+    display: flex;
+    align-items: center;
+  }
+  .trash {
+    position: relative;
+    top: 8px;
+    left: 40%;
+    font-size: 30px;
+  }
+  .container2 button {
+    padding: 12px 10px;
+    margin: 20px 0px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .container2 button:hover {
+    background-color: #0056b3;
+  }
+  
+  .decrease,
+  .increase {
+    width: 30px;
+    text-align: center;
+  }
+  
+  .total {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  .total span {
+    font-size: 1.5rem;
+    color: purple;
+    margin: 10px 0;
+  }
+  
+  .clear-cart,
+  .buy-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 4px;
+    background-color: #28a745;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  
+  .clear-cart:hover,
+  .buy-btn:hover {
+    background-color: #218838;
+  }
+  
+  .signup {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+  }
+  .signup h1 {
+    font-size: 2rem;
+    color: purple;
+    margin-bottom: 0px;
+  }
+  .signup form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup form input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    width: 500px;
+    border-radius: 10px 0px 10px 0px;
+    margin-bottom: 10px;
+    outline: none;
+  }
+  .signup form input::placeholder {
+    text-align: center;
+  }
+  .signup form button {
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    background-color: purple;
+    color: white;
+    border: 1px solid purple;
+    border-radius: 0px 10px 0px 10px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  .signup form button:hover {
+    background-color: rgba(128, 0, 128, 0.425);
+    color: white;
+  }
+  
+  /* footer */
+  footer {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    background-color: rgba(128, 0, 128, 0.151);
+  }
+  footer .footer-logo {
+    font-size: 1.1rem;
+    color: purple;
+  }
+  .footer-nav ul {
+    display: flex;
+  }
+  .footer-nav ul li {
+    list-style: none;
+    margin: 10px 20px;
+  }
+  .footer-nav ul li a {
+    text-decoration: none;
+    color: purple;
+    font-size: 1.1rem;
+    transition: all 300ms ease;
+  }
+  .footer-nav ul li a:hover {
+    color: purple;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .footer-social {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    body {
+      min-width: 100%;
+    }
+    header {
+      flex-direction: column;
+      padding: 10px;
+    }
+    header h1 {
+      font-size: 1.5rem;
+    }
+  
+    header form {
+      display: none;
+    }
+    .icons {
+      display: block;
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    .navbar {
+      flex-direction: column;
+      display: none;
+    }
+    .container {
+      height: 50vh;
+    }
+    .container .title {
+      background-color: rgba(128, 0, 128, 0.151);
+      backdrop-filter: blur(1px);
+      margin: 0 0px;
+      width: 100%;
+      height: 50vh;
+    }
+    .container .title h1 {
+      font-size: 2rem;
+      margin: 0px 20px;
+    }
+    .container .title p {
+      font-size: 1rem;
+      margin: 0px 20px;
+    }
+    .container .title button {
+      font-size: 0.8rem;
+      margin: 10px 0px;
+    }
+    .products {
+      grid-template-columns: repeat(1, 1fr);
+    }
+    .product {
+      padding: 10px;
+    }
+    .product img {
+      height: 150px;
+    }
+    .product h2 {
+      font-size: 1.2rem;
+    }
+    .product p {
+      font-size: 0.8rem;
+    }
+    .product button {
+      font-size: 0.8rem;
+    }
+    .product span {
+      font-size: 1.2rem;
+    }
+    .cont .cart {
+      padding: 10px;
+    }
+    .cont .item {
+      flex-direction: column;
+    }
+    .cont .quantity {
+      margin-top: 10px;
+    }
+    .cont .quantity button {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+    .cont .total {
+      font-size: 1rem;
+    }
+    .cont .clear-cart,
+    .buy-btn {
+      font-size: 1rem;
+    }
+    .container2 {
+      padding: 10px;
+    }
+    .container2 h1 {
+      font-size: 1.5rem;
+    }
+    .cart {
+      padding: 10px;
+    }
+    .item {
+      flex-direction: column;
+    }
+    .quantity {
+      margin-top: 10px;
+    }
+    .quantity button {
+      padding: 5px 10px;
+      font-size: 0.8rem;
+    }
+    .total {
+      font-size: 1rem;
+    }
+    .trash {
+      font-size: 23px;
+      left: 30%;
+      top: 5px;
+    }
+    .clear-cart,
+    .buy-btn {
+      font-size: 1rem;
+    }
+    .signup h1 {
+      font-size: 1.5rem;
+    }
+    .signup form {
+      flex-direction: column;
+    }
+    .signup form input {
+      margin-top: 10px;
+      width: 80%;
+    }
+    .signup form button {
+      width: 80%;
+      border: none;
+      font-size: 0.8rem;
+      margin-bottom: 10px;
+    }
+    footer {
+      flex-direction: column;
+    }
+    footer .footer-logo {
+      font-size: 1rem;
+    }
+    .footer-nav ul {
+      flex-direction: column;
+    }
+    .footer-nav ul li {
+      margin: 10px 0px;
+    }
+    .footer-nav ul li a {
+      font-size: 1rem;
+    }
+    .footer-social {
+      margin-top: 20px;
+    }
+    .footer-social a {
+      font-size: 1.3rem;
+      margin: 0px 20px;
+    }
+  }
